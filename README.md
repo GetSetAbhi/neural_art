@@ -1,16 +1,17 @@
 # neural_art
 
 This repository contains (TensorFlow and Keras) code that transfers the 
-style of a given image to another. The code has been written using [this][original] as a guide
+style of a given image to another. The code has been written using [this][original] and [this][youtube]as a guide
 
 I chose this as an input image
 
 ![Logan Image](/logan.jpg)
+<img src="/logan.jpg" width="256" height="256">
 
 and used this as a reference image
 
 ![Block Image](/styles/block.jpg)
-
+<img src="/styles/block.jpg" width="256" height="256">
 ## Run
 
 To run the script just open the terminal and change directory to
@@ -29,3 +30,5 @@ Tensorflow with GPU support for faster execution.
 
 
 [original]: https://github.com/hnarayanan/artistic-style-transfer/blob/master/notebooks/6_Artistic_style_transfer_with_a_repurposed_VGG_Net_16.ipynb
+
+[youtube]: https://www.youtube.com/watch?v=Oex0eWoU7AQ&feature=youtu.be
