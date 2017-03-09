@@ -13,7 +13,7 @@ width = 512
 
 base_image = K.variable(img.get_image('logan.jpg', height, width))
 #style_image1 = K.variable(img.get_image('styles/block.jpg', height, width))
-style_image2 = K.variable(img.get_image('styles/ironman.jpg', height, width))
+style_image2 = K.variable(img.get_image('styles/block.jpg', height, width))
 combination_image = K.placeholder((1, height, width, 3))
 
 #combine the3 images into a single Keras tensor
