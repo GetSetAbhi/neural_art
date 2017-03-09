@@ -3,7 +3,7 @@ transferring style from one image to an another image image
 
 I chose this as an input image
 
-![Logan Image](/logan.jpg =256x)
+![Logan Image](/logan.jpg)
 
 and used this as a reference image
 
