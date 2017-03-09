@@ -5,12 +5,10 @@ style of a given image to another. The code has been written using [this][origin
 
 I chose this as an input image
 
-![Logan Image](/logan.jpg)
 <img src="/logan.jpg" width="256" height="256">
 
 and used this as a reference image
 
-![Block Image](/styles/block.jpg)
 <img src="/styles/block.jpg" width="256" height="256">
 ## Run
 
