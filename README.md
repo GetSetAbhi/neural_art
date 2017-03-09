@@ -1,7 +1,7 @@
 # neural_art
 
 This repository contains (TensorFlow and Keras) code that transfers the 
-style of a given image to another. The code has been written using [this][original] and [this][youtube]as a guide
+style of a given image to another. The code has been written using [this][original] and [this][youtube] as a guide
 
 Following are the input and the reference image that I have used.
 
