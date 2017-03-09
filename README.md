@@ -4,7 +4,7 @@ This repository contains (TensorFlow and Keras) code that transfers the
 style of a given image to another. The code has been written using [this][original] and [this][youtube]as a guide
 
 I chose this as an input image
-And used this as a reference image
+         And used this as a reference image
 
 <img src="/logan.jpg" width="256" height="256">
 <img src="/styles/block.jpg" width="256" height="256">
