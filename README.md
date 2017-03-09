@@ -11,7 +11,7 @@ Following are the input and the reference image that I have used.
 
 These are the results that I got
 
-<img src="/result.jpg" width="600" height="400">
+<img src="/result.png" width="600" height="400">
 
 
 ## Run
