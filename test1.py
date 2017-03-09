@@ -19,7 +19,7 @@ files = listdir(path)
 images = [ image_path(f) for f in files]
 
 num_rows = 2
-num_cols = 4
+num_cols = 5
 
 fig = plt.figure()
 gs = gridspec.GridSpec(num_rows, num_cols, wspace=0.0)

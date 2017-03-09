@@ -9,6 +9,11 @@ Following are the input and the reference image that I have used.
 <img src="/styles/block.jpg" width="256" height="256">
 
 
+These are the results that I got
+
+<img src="/result.jpg" width="600" height="400">
+
+
 ## Run
 
 To run the script just open the terminal and change directory to
