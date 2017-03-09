@@ -11,3 +11,4 @@ def get_image(path, height, width):
 	pic_array[:, :, :, 1] -= 116.779
 	pic_array[:, :, :, 2] -= 123.68
 	pic_array = pic_array[:, :, :, ::-1]
+	return pic_array

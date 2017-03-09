@@ -12,11 +12,16 @@ height = 512
 width = 512
 
 base_image = K.variable(img.get_image('logan.jpg', height, width))
-style_image1 = K.variable(img.get_image('styles/block.jpg', height, width))
+#style_image1 = K.variable(img.get_image('styles/block.jpg', height, width))
 style_image2 = K.variable(img.get_image('styles/ironman.jpg', height, width))
 combination_image = K.placeholder((1, height, width, 3))
 
 #combine the3 images into a single Keras tensor
+'''input_tensor = K.concatenate([base_image,
+	style_image1,
+	style_image2, 
+	combination_image], axis = 0)'''
+
 input_tensor = K.concatenate([base_image,
 	style_image2, 
 	combination_image], axis = 0)
@@ -42,7 +47,9 @@ def content_loss(content, combination):
 
 layer_features = layers['block2_conv2']
 content_image_features = layer_features[0, :, :, :]
+#combination_features = layer_features[3, :, :, :]
 combination_features = layer_features[2, :, :, :]
+
 
 loss += content_weight * content_loss(content_image_features,combination_features)
 
@@ -59,15 +66,32 @@ def style_loss(style, combination):
 	size = height * width
 	return K.sum(K.square(S - C)) / (4. * (channels ** 2) * (size ** 2))
 
+# Removable
+def style_loss_two(style1, style2, combination):
+	S1 = gram_matrix(style1)
+	S2 = gram_matrix(style2)
+	C = gram_matrix(combination)
+	channels = 3
+	size = height * width
+	return backend.sum(backend.square(S1 - C) + backend.square(S2 - C) ) / (4. * (channels ** 2) * (size ** 2))
+
 feature_layers = ['block1_conv2', 'block2_conv2',
 'block3_conv3', 'block4_conv3',
 'block5_conv3']
 
+# Apply Style image 1
 for layer_name in feature_layers:
 	layer_features = layers[layer_name]
 	style_features = layer_features[1, :, :, :]
+
+	'''#removable
+				style_features2 = layer_features[2, :, :, :]
+				combination_features = layer_features[3, :, :, :]
+				sl = style_loss_two(style_features,style_features2, combination_features)'''
+
 	combination_features = layer_features[2, :, :, :]
-	sl = style_loss(style_features, combination_features)
+	sl = style_loss(style_features,combination_features)
+
 	loss += (style_weight / len(feature_layers)) * sl
 
 

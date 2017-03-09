@@ -1,2 +1,6 @@
 # neural_art
-transferring styles from 2 different images onto an input image
+transferring style from one image to an another image image
+
+I choose this as an input image
+![Logan Image](/logan.jpg)
+
