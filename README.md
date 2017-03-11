@@ -3,22 +3,28 @@
 This repository contains (TensorFlow and Keras) code that transfers the 
 style of a given image to another. The code has been written using [this][original] and [this][youtube] as a guide
 
-Following are the input and the reference image that I have used.
+## Input image 
 
 <img src="/logan.jpg" width="256" height="256">
-<img src="/styles/block.jpg" width="256" height="256">
+
+## Style Images
+<img src="/styles/wave.jpg" width="256" height="256">
+<img src="/styles/forest.jpg" width="256" height="256">
 
 
-These are the results that I got
+## Resultant Images
 
-<img src="/result.jpeg" width="600" height="400">
+<img src="/result.png" width="600" height="400">
 
+## Final Image
+
+<img src="/result9.png" width="256" height="256">
 
 ## Run
 
 To run the script just open the terminal and change directory to
 this repository.
-Run this python file **art_generator.py**
+Run this python file **artist.py**
 
 
 ## Remarks
