@@ -17,8 +17,9 @@ style of a given image to another. The code has been written using [this][origin
 <img src="/result.png" width="600" height="400">
 
 ## Final Image
+This image was generated after the final iteration
 
-<img src="/result9.png" width="256" height="256">
+<img src="/output/result9.png" width="256" height="256">
 
 ## Run
 
